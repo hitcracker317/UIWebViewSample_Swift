@@ -28,15 +28,22 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        if let touch = touches.first as? UITouch {
+            let location = touch.locationInView(webView)
+            println(location)
+        }
+    }
+    
     @IBAction func rigthSwipe(sender: AnyObject) {
-        println("右")
-        //戻る
+        //右スワイプで戻る
+        //UITouch *touch = touc
         webView.goBack()
     }
 
     @IBAction func leftSwipe(sender: AnyObject) {
-        println("左")
-        //進む
+        //左スワイプで進む
         webView.goForward()
     }
 

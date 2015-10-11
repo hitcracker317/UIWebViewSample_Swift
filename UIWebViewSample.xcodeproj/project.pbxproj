@@ -13,6 +13,8 @@
 		DC2C327C1BCA041D00559DD9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2C327B1BCA041D00559DD9 /* Images.xcassets */; };
 		DC2C327F1BCA041D00559DD9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC2C327D1BCA041D00559DD9 /* LaunchScreen.xib */; };
 		DC2C328B1BCA041D00559DD9 /* UIWebViewSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2C328A1BCA041D00559DD9 /* UIWebViewSampleTests.swift */; };
+		DC2C329B1BCA1BA100559DD9 /* backImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2C32991BCA1BA100559DD9 /* backImage.png */; };
+		DC2C329C1BCA1BA100559DD9 /* goImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2C329A1BCA1BA100559DD9 /* goImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		DC2C32841BCA041D00559DD9 /* UIWebViewSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIWebViewSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2C32891BCA041D00559DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC2C328A1BCA041D00559DD9 /* UIWebViewSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewSampleTests.swift; sourceTree = "<group>"; };
+		DC2C32991BCA1BA100559DD9 /* backImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backImage.png; sourceTree = "<group>"; };
+		DC2C329A1BCA1BA100559DD9 /* goImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 		DC2C32721BCA041C00559DD9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DC2C32941BCA169600559DD9 /* images */,
 				DC2C32731BCA041C00559DD9 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +115,15 @@
 				DC2C32891BCA041D00559DD9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC2C32941BCA169600559DD9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DC2C32991BCA1BA100559DD9 /* backImage.png */,
+				DC2C329A1BCA1BA100559DD9 /* goImage.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +206,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC2C329B1BCA1BA100559DD9 /* backImage.png in Resources */,
 				DC2C327A1BCA041D00559DD9 /* Main.storyboard in Resources */,
 				DC2C327F1BCA041D00559DD9 /* LaunchScreen.xib in Resources */,
 				DC2C327C1BCA041D00559DD9 /* Images.xcassets in Resources */,
+				DC2C329C1BCA1BA100559DD9 /* goImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
