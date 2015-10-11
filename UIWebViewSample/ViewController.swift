@@ -27,6 +27,18 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func rigthSwipe(sender: AnyObject) {
+        println("右")
+        //戻る
+        webView.goBack()
+    }
+
+    @IBAction func leftSwipe(sender: AnyObject) {
+        println("左")
+        //進む
+        webView.goForward()
+    }
 
 
 }

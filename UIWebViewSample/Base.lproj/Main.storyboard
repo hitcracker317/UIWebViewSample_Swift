@@ -29,6 +29,11 @@
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pH1-6j-2uA">
                                 <rect key="frame" x="0.0" y="58" width="375" height="609"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gJ5-au-T86" appends="YES" id="JQT-8a-Wqu"/>
+                                    <outletCollection property="gestureRecognizers" destination="K1d-tK-HE0" appends="YES" id="IKb-2W-Psg"/>
+                                </connections>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -40,6 +45,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="gJ5-au-T86">
+                    <connections>
+                        <action selector="leftSwipe:" destination="vXZ-lx-hvc" id="gtB-ev-JsW"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="K1d-tK-HE0">
+                    <connections>
+                        <action selector="rigthSwipe:" destination="vXZ-lx-hvc" id="119-yO-1Xs"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="457.5" y="387.5"/>
         </scene>
