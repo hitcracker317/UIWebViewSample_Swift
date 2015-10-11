@@ -10,9 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var urlBar: UISearchBar!
+    @IBOutlet weak var webView: UIWebView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        var url: NSURL = NSURL(string: "http://google.com")! //urlをセット
+        var urlRequest: NSURLRequest = NSURLRequest(URL: url) //urlを元にリクエストを作成
+        webView.loadRequest(urlRequest) //リクエストを実行
     }
 
     override func didReceiveMemoryWarning() {
